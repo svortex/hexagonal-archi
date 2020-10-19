@@ -1,0 +1,13 @@
+parameters:
+    checkMissingIterableValueType: false
+    inferPrivatePropertyTypeFromConstructor: true
+    checkGenericClassInNonGenericObjectType: false
+    autoload_files:
+        - vendor/autoload.php
+    excludes_analyse:
+        - vendor
+        - tests
+    paths:
+        - src/
+
+    level: max

@@ -1,0 +1,15 @@
+git:
+    depth: 1
+services:
+    - docker
+
+# Creation of needed folders
+before_install:
+    - mkdir -p var/log var/cache swagger && chmod -fR 0777 var tests
+
+# Install project
+install:
+    - make up
+# Launch ci
+script:
+    - make ci
